@@ -1,0 +1,525 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	background: linear-gradient(90deg, rgba(83, 24, 81, 1) 0%, rgba(87, 38, 133, 1) 50%, rgba(83, 24, 81, 1) 100%);
+	color: #fff;
+}
+
+@media (min-width: 992px) {
+	.col-lg-1-5 {
+		flex: 0 0 auto;
+		width: 20%;
+	}
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+a,
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.position-relative {
+	position: relative;
+}
+
+.header {
+	width: 100%;
+	top: 0;
+	left: 0;
+	transition: all ease 260ms;
+	position: fixed;
+	z-index: 999;
+	padding: 20px 0;
+}
+
+.header-on-scroll,
+.header-open {
+	background: rgba(0, 0, 0, 0.65);
+}
+
+.header .row {
+	margin-bottom: 0;
+}
+
+.header-nav {
+	transition: all ease 260ms;
+}
+
+.header-nav-item {
+	display: block;
+	padding: 0.25rem 0.75rem;
+	border: 1px solid rgba(255, 255, 255, 0);
+	background: auto;
+	height: auto;
+	color: #fff;
+	border-radius: 9px;
+}
+
+.header-nav-item .soon {
+	background: #fff;
+	color: #572580;
+	font-size: 0.7rem;
+	border-radius: 9px;
+	display: inline-block;
+	line-height: 1;
+	padding: 3px 5px;
+	margin-left: 4px;
+}
+
+.header-nav-item:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-nav-item+.header-nav-item {
+	margin-bottom: 1rem;
+}
+
+.header-nav-item.cta {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.4);
+}
+
+.header-nav-item.cta-wallet {
+	max-width: 160px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	transition: all ease 260ms;
+}
+
+.header-nav-item.cta-golden {
+	background: linear-gradient(90deg, #8F13FF 0%, #F6A552 100%);
+	border: none;
+	margin: 1rem 0;
+	font-weight: 600;
+	max-width: 160px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	transition: all ease 260ms;
+}
+
+.header-nav-separator {
+	display: none;
+}
+
+@media (min-width: 992px) {
+	.header-nav-item {
+		display: inline-block;
+		padding: 0.25rem 0.75rem;
+		border: 1px solid rgba(255, 255, 255, 0);
+	}
+
+	.header-nav-item .soon {
+		position: absolute;
+		top: -0.8rem;
+		left: 50%;
+		margin-left: -19px;
+	}
+
+	.header-nav-item+.header-nav-item {
+		margin-left: 1rem;
+		margin-bottom: 0;
+	}
+
+	.header-nav-item.cta {
+		background-color: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.4);
+		border-radius: 10px;
+	}
+
+	.header-nav-item.cta-golden {
+		background: linear-gradient(90deg, #8F13FF 0%, #F6A552 100%);
+		border: none;
+		margin: 0;
+	}
+
+	.header-nav-separator {
+		background: #FEF5F1;
+		width: 1px;
+		height: 24px;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		display: inline-block;
+	}
+}
+
+.section {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+@media (min-width: 992px) {
+	.section {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}
+
+@media (min-width: 1500px) {
+	.section {
+		padding-left: 14rem;
+		padding-right: 14rem;
+	}
+}
+
+.section-header {
+	text-align: center;
+}
+
+.section-title {
+	font-weight: 700;
+	font-size: 2.2rem;
+	margin-bottom: 1rem;
+	display: block;
+}
+
+.section-paragraph {
+	font-size: 1.1rem;
+	margin-bottom: 5rem;
+}
+
+@media (min-width: 992px) {
+	.section-title {
+		font-size: 4rem;
+	}
+
+	.section-paragraph {
+		font-size: 1.5rem;
+	}
+}
+
+.section-welcome {
+	background: linear-gradient(90deg, #FFA95A 0%, #B147FF 100%);
+}
+
+.welcome-heading {
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.welcome-title {
+	font-weight: 800;
+	font-size: 2.6rem;
+	line-height: 1.2;
+}
+
+.welcome-paragraph {
+	font-size: 1.3rem;
+}
+
+@media (min-width: 992px) {
+	.welcome-heading {
+		font-size: 1rem;
+	}
+
+	.welcome-title {
+		font-size: 4.2rem;
+	}
+
+	.welcome-paragraph {
+		font-size: 1.5rem;
+	}
+}
+
+.welcome-btn-demo {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 6px;
+	padding: 0.5rem 1.5rem;
+	margin-right: 1rem;
+}
+
+.welcome-btn-white-paper {
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	border-radius: 6px;
+	padding: 0.5rem 1.5rem;
+}
+
+.section-about {
+	font-size: 1.1rem;
+}
+
+.about-subtitle-counter {
+	color: #DC826A;
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+
+.about-subtitle {
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+
+.about-paragraph {
+	font-size: 0.9rem;
+}
+
+@media (min-width: 992px) {
+	.about-subtitle {
+		font-weight: 700;
+		font-size: 2.6rem;
+	}
+
+	.about-paragraph {
+		font-size: 1.5rem;
+	}
+}
+
+.section-gaming {
+	background: linear-gradient(0deg, rgba(255, 169, 90, 0.4) 0%, rgba(177, 71, 255, 0.4) 100%);
+	padding-bottom: 0;
+}
+
+.gaming-title {}
+
+.section-team {}
+
+img.team-pp {
+	display: block;
+	margin: 0 auto 1rem;
+	width: 65%;
+	height: auto;
+}
+
+.team-full-name {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.team-position {
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.team-background {
+	font-size: 0.7rem;
+}
+
+.section-roadmap {}
+
+.roadmap-subtitle {
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+.roadmap-lead {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.roadmap-list {
+	margin: 0;
+	padding-left: 1rem;
+	font-size: 0.8rem;
+}
+
+.section-partners {}
+
+.section-boombit {}
+
+.boombit-count-number {
+	font-size: 3.25rem;
+	font-weight: 700;
+	line-height: 1;
+	margin: 0 0 0.5rem;
+}
+
+.boombit-count-label {
+	font-size: 0.90rem;
+	font-weight: 700;
+	line-height: 1;
+	margin: 0;
+}
+
+@media (min-width: 992px) {
+	.boombit-count-number {
+		font-size: 3.75rem;
+	}
+
+	.boombit-count-label {
+		font-size: 1rem;
+	}
+}
+
+.boombit-count {
+	display: flex;
+	width: 100%;
+	height: 120px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.boombit-count-1 {
+	background-image: url('https://www.shopimia.com/assets/www/boomland.io/202207/media/boombit-count-1.png');
+}
+
+.boombit-count-2 {
+	background-image: url('https://www.shopimia.com/assets/www/boomland.io/202207/media/boombit-count-2.png');
+}
+
+.boombit-count-3 {
+	background-image: url('https://www.shopimia.com/assets/www/boomland.io/202207/media/boombit-count-3.png');
+}
+
+.boombit-count-4 {
+	background-image: url('https://www.shopimia.com/assets/www/boomland.io/202207/media/boombit-count-4.png');
+}
+
+.footer {}
+
+.footer-copyright {
+	margin: 3rem 0;
+	font-size: 0.8rem;
+}
+
+.footer-nav {
+	font-size: 1.5rem;
+}
+
+.footer-nav a {
+	display: inline-block;
+	margin-right: 1rem;
+	line-height: 1;
+}
+
+.footer-nav .supscript {
+	font-size: 35%;
+	display: inline-block;
+	border-radius: 6px;
+	background: #fff;
+	color: #572580;
+	padding: 0.15rem 0.3rem;
+	line-height: 1;
+	position: absolute;
+	top: -0.5rem;
+	right: -1rem;
+}
+
+@media (min-width: 992px) {
+	.footer-nav {
+		font-size: 3rem;
+	}
+
+	.footer-nav a {
+		margin-right: 1.5rem;
+	}
+
+	.footer-nav .supscript {
+		font-size: 26%;
+		padding: 0.15rem 0.3rem;
+		top: -0.5rem;
+		right: -1.5rem;
+	}
+}
+
+.footer-nav a:last-child {
+	margin-right: 0;
+}
+
+.swiper {
+	width: 100%;
+	height: auto;
+}
+
+.swiper-slide {
+	width: 100%;
+}
+
+.roadmap-timeline {
+	position: relative;
+	width: 90%;
+	height: 18px;
+	background: #000;
+	margin: 30px auto;
+	border-radius: 20px;
+}
+
+.roadmap-timeline-fill {
+	background: linear-gradient(90deg, #8F13FF 0%, #F6A552 100%);
+	height: 18px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 20px;
+}
+
+.roadmap-timeline-cursor {
+	height: 50px;
+	width: 50px;
+	top: -16px;
+	position: absolute;
+	border-radius: 100%;
+	background: transparent;
+	margin-left: -25px;
+	border: 10px solid rgba(218, 233, 248, 0.15);
+}
+
+.roadmap-timeline-cursor-dot {
+	height: 28px;
+	width: 28px;
+	top: -5px;
+	position: absolute;
+	border-radius: 100%;
+	background: #E99269;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border: 0.2px solid rgba(255, 255, 255, 0.35);
+	margin-left: -14px;
+}
+
+.roadmap-timeline-sq {
+	background: #000;
+	width: 4px;
+	height: 4px;
+	position: absolute;
+	top: 7px;
+	margin-left: -2px;
+}
+
+.roadmap-timeline-sq-1 {
+	left: 3%;
+}
+
+.roadmap-timeline-sq-2 {
+	left: 25%;
+}
+
+.roadmap-timeline-sq-3 {
+	left: 50%;
+}
+
+.roadmap-timeline-sq-4 {
+	left: 75%;
+}
+
+[data-fill="25"] .roadmap-timeline-sq:nth-child(4),
+[data-fill="25"] .roadmap-timeline-sq:nth-child(5),
+[data-fill="50"] .roadmap-timeline-sq:nth-child(5) {
+	background: linear-gradient(90deg, #FAA366 21%, #BE57E5 115%);
+}
+
+.list-unstyled {
+	list-style: none;
+}
